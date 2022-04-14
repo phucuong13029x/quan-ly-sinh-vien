@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Quản lý sinh viên</title>
+    <meta content="width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5" name="viewport">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <script type="text/javascript" async="" src="./js/uikit.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/uikit.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <nav class="uk-grid-collapse uk-navbar uk-navbar-container" uk-grid>
+            <div class="uk-navbar-left">
+                <a class="uk-width-auto uk-navbar-toggle" uk-navbar-toggle-icon uk-toggle="target: #offcanvas"></a>
+                <div class="uk-width-expand">Chào <a class="uk-label uk-label-success" href="./index.html">Admin</a></div>
+                <div class="uk-width-auto uk-position-center-right uk-margin-right">
+                    <a href="./login.html">Đăng xuất</a>
+                </div>
+            </div>
+        </nav>
+        <div class="content">
+            <h2 class="uk-width-1-1 uk-padding-small uk-text-center uk-text-bolder">QRCODE</h2>
+            <div class="uk-text-center">
+                <p>Quét mã QRCODE tại đây!</p>
+                <div class="uk-card uk-card-default uk-placeholder uk-margin" style="max-width: 320px;margin: auto;">
+                    <div class="uk-background-cover uk-overflow-hidden" style="aspect-ratio: 1/1;background-image: url('./images/qrcode.jpg');"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="offcanvas" uk-offcanvas>
+        <div class="uk-offcanvas-bar">
+            <button class="uk-offcanvas-close" type="button" uk-close></button>
+            <div class="uk-flex uk-flex-column uk-width-1-1 uk-position-center">
+                <a class="bor uk-button uk-button-danger uk-margin" href="./index.html">Quản lý hồ sơ</a>
+                <a class="bor uk-button uk-button-danger uk-margin" href="./qrcode.html">Quét mã QR</a>
+                <a class="bor uk-button uk-button-danger uk-margin" href="./bang-diem-qua-trinh.html">Điểm quá trình</a>
+                <a class="bor uk-button uk-button-danger uk-margin" href="./bang-diem-cuoi-ky.html">Điểm cuối kỳ</a>
+                <a class="bor uk-button uk-button-danger uk-margin" href="./quan-ly-nguoi-dung.html">Quản lý người dùng</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

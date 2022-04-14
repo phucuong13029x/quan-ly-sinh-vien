@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Quản lý sinh viên</title>
+    <meta content="width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5" name="viewport">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <script type="text/javascript" async="" src="./js/uikit.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/uikit.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="uk-width-1-1">
+            <div class="uk-inline uk-width-1-1">
+                <div class="images-login uk-background-cover uk-overflow-hidden" style="background-image: url('./images/bg.png');"></div>
+                <div class="k-login bor uk-overlay uk-overlay-default uk-position-center">
+                    <form class="uk-width-1-1 uk-padding uk-text-center uk-padding-remove@s" action="./index.html">
+                        <h1 class="uk-heading uk-text-bolder uk-margin-medium">Đăng nhập</h1>
+                        <div class="toggle">
+                            <div class="uk-margin">
+                                <div class="uk-inline uk-width-1-1">
+                                    <span class="uk-form-icon user icon" style="margin: auto auto auto 10px;"></span>
+                                    <input class="bor uk-input" type="text" placeholder="Tên đăng nhập...">
+                                </div>
+                            </div>
+                            <div class="uk-margin">
+                                <div class="uk-inline uk-width-1-1">
+                                    <span class="uk-form-icon lock icon" style="margin: auto auto auto 10px;"></span>
+                                    <input class="bor uk-input" type="password" placeholder="Mật khẩu...">
+                                </div>
+                            </div>
+                            <div class="uk-margin-medium-bottom">
+                                <label><input class="uk-checkbox" type="checkbox" checked> Ghi nhớ đăng nhập.</label>
+                            </div>
+                        </div>
+                        <div class="toggle uk-margin" hidden>
+                            <p>Quét mã qrcode tại đây!</p>
+                            <div class="uk-background-cover uk-overflow-hidden" style="max-width: 320px;margin: auto;aspect-ratio: 1/1;background-image: url('./images/qrcode.jpg');"></div>
+                        </div>
+                        <div>
+                            <button class="toggle bor uk-button uk-button-danger uk-margin uk-padding-left uk-padding-right uk-text-bolder" type="submit">Đăng nhập</button>
+                            <button class="toggle bor uk-button uk-button-danger uk-margin uk-padding-left uk-padding-right uk-text-bolder" type="button" hidden uk-toggle="target: .toggle">Quay lại đăng nhập</button>
+                        </div>
+                        <div>
+                            <button class="toggle bor uk-button uk-button-default uk-margin uk-padding-left uk-padding-right uk-text-bolder" type="button" uk-toggle="target: .toggle">Quét mã QRcode</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

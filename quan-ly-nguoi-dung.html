@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Quản lý sinh viên</title>
+    <meta content="width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5" name="viewport">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <script type="text/javascript" async="" src="./js/uikit.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/uikit.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <nav class="uk-grid-collapse uk-navbar uk-navbar-container" uk-grid>
+            <div class="uk-navbar-left">
+                <a class="uk-width-auto uk-navbar-toggle" uk-navbar-toggle-icon uk-toggle="target: #offcanvas"></a>
+                <div class="uk-width-expand">Chào <a class="uk-label uk-label-success" href="./index.html">Admin</a></div>
+                <div class="uk-width-auto uk-position-center-right uk-margin-right">
+                    <a href="./login.html">Đăng xuất</a>
+                </div>
+            </div>
+        </nav>
+        <div class="content">
+            <h2 class="uk-width-1-1 uk-padding-small uk-text-center uk-text-bolder">Danh sách người dùng</h2>
+            <div class="uk-margin">
+                <button class="uk-button uk-button-secondary uk-light" type="button" href="#add-user" uk-toggle><span class="add icon"></span> Thêm mới</button>
+            </div>
+            <table class="table-default">
+                <thead>
+                  <tr>
+                    <th scope="col">Tên</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Chức năng</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td data-label="Tên">Nguyen Van A</td>
+                    <td data-label="Email">info@gmail.com</td>
+                    <td data-label="Chức năng"><a><span class="edit icon" href="#edit-user" uk-toggle></span></a><a href="#xac-nhan-trang-thai" uk-toggle><span class="remove icon"></span></a></td>
+                  </tr>
+                  <tr>
+                    <td data-label="Tên">Nguyen Van A</td>
+                    <td data-label="Email">info@gmail.com</td>
+                    <td data-label="Chức năng"><a><span class="edit icon" href="#edit-user" uk-toggle></span></a><a href="#xac-nhan-trang-thai" uk-toggle><span class="remove icon"></span></a></td>
+                  </tr>
+                  <tr>
+                    <td data-label="Tên">Nguyen Van A</td>
+                    <td data-label="Email">info@gmail.com</td>
+                    <td data-label="Chức năng"><a><span class="edit icon" href="#edit-user" uk-toggle></span></a><a href="#xac-nhan-trang-thai" uk-toggle><span class="remove icon"></span></a></td>
+                  </tr>
+                  <tr>
+                    <td data-label="Tên">Nguyen Van A</td>
+                    <td data-label="Email">info@gmail.com</td>
+                    <td data-label="Chức năng"><a><span class="edit icon" href="#edit-user" uk-toggle></span></a><a href="#xac-nhan-trang-thai" uk-toggle><span class="remove icon"></span></a></td>
+                  </tr>
+                  <tr>
+                    <td data-label="Tên">Nguyen Van A</td>
+                    <td data-label="Email">info@gmail.com</td>
+                    <td data-label="Chức năng"><a><span class="edit icon" href="#edit-user" uk-toggle></span></a><a href="#xac-nhan-trang-thai" uk-toggle><span class="remove icon"></span></a></td>
+                  </tr>
+                  <tr>
+                    <td data-label="Tên">Nguyen Van A</td>
+                    <td data-label="Email">info@gmail.com</td>
+                    <td data-label="Chức năng"><a><span class="edit icon" href="#edit-user" uk-toggle></span></a><a href="#xac-nhan-trang-thai" uk-toggle><span class="remove icon"></span></a></td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+    </div>
+    <!-- them moi nguoi dung -->
+    <div id="add-user" class="uk-flex-top" uk-modal>
+        <div class="bor uk-modal-dialog uk-modal-body uk-margin-auto-vertical uk-text-center">
+            <form class="uk-form-horizontal uk-text-default" style="padding-right: 5%;">
+                <div class="uk-margin">
+                    <label class="uk-form-label uk-text-default" for="form-horizontal-text">Họ và tên</label>
+                    <div class="uk-form-controls">
+                        <input class="uk-input" id="form-horizontal-text" type="text" placeholder="Họ và tên...">
+                    </div>
+                </div>
+                <div class="uk-margin">
+                    <label class="uk-form-label uk-text-default" for="form-horizontal-text">Tên đăng nhập</label>
+                    <div class="uk-form-controls">
+                        <input class="uk-input" id="form-horizontal-text" type="text" placeholder="Tên đăng nhập...">
+                    </div>
+                </div>
+                <div class="uk-margin">
+                    <label class="uk-form-label uk-text-default" for="form-horizontal-text">Mật khẩu</label>
+                    <div class="uk-form-controls">
+                        <input class="uk-input" id="form-horizontal-text" type="password" placeholder="Mật khẩu...">
+                    </div>
+                </div>  
+                <div class="uk-margin">
+                    <label class="uk-form-label uk-text-default" for="form-horizontal-text">Email</label>
+                    <div class="uk-form-controls">
+                        <input class="uk-input" id="form-horizontal-text" type="text" placeholder="Email...">
+                    </div>
+                </div>
+                <div class="uk-margin uk-child-width-1-2 uk-flex">
+                    <div>
+                        <button class="bor uk-button uk-button-danger" type="submit">Thêm</button>
+                    </div>
+                    <div>
+                        <button class="bor uk-button uk-button-default uk-modal-close" type="button">Thoát</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- chinh sua thong tin nguoi dung -->
+    <div id="edit-user" class="uk-flex-top" uk-modal>
+        <div class="bor uk-modal-dialog uk-modal-body uk-margin-auto-vertical uk-text-center">
+            <form class="uk-form-horizontal uk-text-default" style="padding-right: 5%;">
+                <div class="uk-margin">
+                    <label class="uk-form-label uk-text-default" for="form-horizontal-text">Họ và tên</label>
+                    <div class="uk-form-controls">
+                        <input class="uk-input" id="form-horizontal-text" type="text" value="Nguyễn Văn A">
+                    </div>
+                </div>
+                <div class="uk-margin">
+                    <label class="uk-form-label uk-text-default" for="form-horizontal-text">Tên đăng nhập</label>
+                    <div class="uk-form-controls">
+                        <input class="uk-input" id="form-horizontal-text" type="text" value="info">
+                    </div>
+                </div>
+                <div class="uk-margin">
+                    <label class="uk-form-label uk-text-default" for="form-horizontal-text">Mật khẩu</label>
+                    <div class="uk-form-controls">
+                        <input class="uk-input" id="form-horizontal-text" type="password" value="123456">
+                    </div>
+                </div>
+                <div class="uk-margin">
+                    <label class="uk-form-label uk-text-default" for="form-horizontal-text">Email</label>
+                    <div class="uk-form-controls">
+                        <input class="uk-input" id="form-horizontal-text" type="text" value="info@gmail.com">
+                    </div>
+                </div>
+                <div class="uk-margin uk-child-width-1-2 uk-flex">
+                    <div>
+                        <button class="bor uk-button uk-button-danger" type="submit">Lưu</button>
+                    </div>
+                    <div>
+                        <button class="bor uk-button uk-button-default uk-modal-close" type="button">Thoát</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div id="offcanvas" uk-offcanvas>
+        <div class="uk-offcanvas-bar">
+            <button class="uk-offcanvas-close" type="button" uk-close></button>
+            <div class="uk-flex uk-flex-column uk-width-1-1 uk-position-center">
+                <a class="bor uk-button uk-button-danger uk-margin" href="./index.html">Quản lý hồ sơ</a>
+                <a class="bor uk-button uk-button-danger uk-margin" href="./qrcode.html">Quét mã QR</a>
+                <a class="bor uk-button uk-button-danger uk-margin" href="./bang-diem-qua-trinh.html">Điểm quá trình</a>
+                <a class="bor uk-button uk-button-danger uk-margin" href="./bang-diem-cuoi-ky.html">Điểm cuối kỳ</a>
+                <a class="bor uk-button uk-button-danger uk-margin" href="./quan-ly-nguoi-dung.html">Quản lý người dùng</a>
+            </div>
+        </div>
+    </div>
+    <div id="xac-nhan-trang-thai" class="uk-flex-top" uk-modal>
+        <div class="bor uk-modal-dialog uk-modal-body uk-margin-auto-vertical uk-text-center">
+            <p>Bạn có chắc muốn xóa hồ sơ này?</p>
+            <div class="uk-margin uk-child-width-1-2 uk-flex">
+                <div>
+                    <button class="bor uk-button uk-button-danger" type="button">Có</button>
+                </div>
+                <div>
+                    <button class="bor uk-button uk-button-default uk-modal-close" type="button">Không</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

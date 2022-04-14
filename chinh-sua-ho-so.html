@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Quản lý sinh viên</title>
+    <meta content="width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5" name="viewport">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <script type="text/javascript" async="" src="./js/uikit.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/uikit.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <nav class="uk-grid-collapse uk-navbar uk-navbar-container" uk-grid>
+            <div class="uk-navbar-left">
+                <a class="uk-width-auto uk-navbar-toggle" uk-navbar-toggle-icon uk-toggle="target: #offcanvas"></a>
+                <div class="uk-width-expand">Chào <a class="uk-label uk-label-success" href="./index.html">Admin</a></div>
+                <div class="uk-width-auto uk-position-center-right uk-margin-right">
+                    <a href="./login.html">Đăng xuất</a>
+                </div>
+            </div>
+        </nav>
+        <div class="content">
+            <h2 class="uk-width-1-1 uk-padding-small uk-text-center uk-text-bolder">Chỉnh sửa hồ sơ sinh viên</h2>
+            <form action="./index.html">
+                <div class="uk-padding-small uk-text-default" uk-grid>
+                    <div class="uk-width-2-3@m uk-width-1-1@s">
+                        <div class="uk-margin">
+                            <label class="uk-form-label uk-text-default">Mã sinh viên</label>
+                            <div class="uk-form-controls">
+                                <input class="uk-input" type="text" value="0001TH">
+                            </div>
+                        </div>
+                        <div class="uk-margin">
+                            <label class="uk-form-label uk-text-default">Tên sinh viên</label>
+                            <div class="uk-form-controls">
+                                <input class="uk-input" type="text" value="Nguyễn Văn A">
+                            </div>
+                        </div>
+                        <div class="uk-margin">
+                            <label class="uk-form-label uk-text-default">Ngày sinh</label>
+                            <div class="uk-form-controls">
+                                <input class="uk-input" type="date" value="01/01/2000">
+                            </div>
+                        </div>
+                        <div class="uk-margin">
+                            <label class="uk-form-label uk-text-default">Giới tính</label>
+                            <div class="uk-form-controls">
+                                <select class="uk-select">
+                                    <option>Nam</option>
+                                    <option>Nữ</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="uk-margin">
+                            <label class="uk-form-label uk-text-default">Địa chỉ</label>
+                            <div class="uk-form-controls">
+                                <input class="uk-input" type="text" value="123 Abc">
+                            </div>
+                        </div>
+                        <div class="uk-margin">
+                            <label class="uk-form-label uk-text-default">Số điện thoại</label>
+                            <div class="uk-form-controls">
+                                <input class="uk-input" type="text" value="0123456789">
+                            </div>
+                        </div>
+                        <div class="uk-margin">
+                            <label class="uk-form-label uk-text-default">Email</label>
+                            <div class="uk-form-controls">
+                                <input class="uk-input" type="text" value="info@gmail.com">
+                            </div>
+                        </div>
+                        <div class="uk-margin">
+                            <label class="uk-form-label uk-text-default">Khoa</label>
+                            <div class="uk-form-controls">
+                                <select class="uk-select">
+                                    <option>Tên khoa</option>
+                                    <option>Tên khoa</option>
+                                    <option>Tên khoa</option>
+                                    <option>Tên khoa</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-text-center uk-width-1-3@m uk-width-1-1@s uk-margin uk-padding-large uk-padding-remove-top">
+                        <div class="uk-background-cover uk-overflow-hidden" style="width:100%;max-width:150px;aspect-ratio: 3/4;background-image: url('./images/avatar-default.jpg');margin: auto;"></div>
+                        <div class="uk-margin">
+                            <div uk-form-custom>
+                                <input type="file">
+                                <button class="bor uk-button uk-margin uk-button-default" type="button" tabindex="-1">Tải ảnh lên</button>
+                            </div>
+                        </div>
+                        <div class="uk-card uk-card-default uk-margin-small" style="max-width: 150px;margin: auto;">
+                            <div class="uk-background-cover uk-overflow-hidden" style="aspect-ratio: 1/1;background-image: url('./images/qrcode.jpg');"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-child-width-1-2@m uk-child-width-1-1@s uk-flex uk-text-center uk-padding-large">
+                    <div>
+                        <button class="bor uk-button uk-button-danger" type="submit">Cập nhật</button>
+                    </div>
+                    <div>
+                        <a class="bor uk-button uk-button-default" href="./index.html">Quay lại</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div id="offcanvas" uk-offcanvas>
+        <div class="uk-offcanvas-bar">
+            <button class="uk-offcanvas-close" type="button" uk-close></button>
+            <div class="uk-flex uk-flex-column uk-width-1-1 uk-position-center">
+                <a class="bor uk-button uk-button-danger uk-margin" href="./index.html">Quản lý hồ sơ</a>
+                <a class="bor uk-button uk-button-danger uk-margin" href="./qrcode.html">Quét mã QR</a>
+                <a class="bor uk-button uk-button-danger uk-margin" href="./bang-diem-qua-trinh.html">Điểm quá trình</a>
+                <a class="bor uk-button uk-button-danger uk-margin" href="./bang-diem-cuoi-ky.html">Điểm cuối kỳ</a>
+                <a class="bor uk-button uk-button-danger uk-margin" href="./quan-ly-nguoi-dung.html">Quản lý người dùng</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

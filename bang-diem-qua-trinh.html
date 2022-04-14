@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Quản lý sinh viên</title>
+    <meta content="width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5" name="viewport">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <script type="text/javascript" async="" src="./js/uikit.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/uikit.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <nav class="uk-grid-collapse uk-navbar uk-navbar-container" uk-grid>
+            <div class="uk-navbar-left">
+                <a class="uk-width-auto uk-navbar-toggle" uk-navbar-toggle-icon uk-toggle="target: #offcanvas"></a>
+                <div class="uk-width-expand">Chào <a class="uk-label uk-label-success" href="./index.html">Admin</a></div>
+                <div class="uk-width-auto uk-position-center-right uk-margin-right">
+                    <a href="./login.html">Đăng xuất</a>
+                </div>
+            </div>
+        </nav>
+        <div class="uk-padding-small uk-padding-top-remove">
+        <h2 class="uk-width-1-1 uk-padding-small uk-text-center uk-text-bolder">Bảng điểm theo lớp học phần</h2>
+        <div class="uk-margin">
+          <label class="uk-form-label uk-text-default" for="form-horizontal-select">Đợt:</label>
+          <div class="uk-form-controls">
+            <select class="uk-select" id="form-horizontal-select">
+              <option>1 năm 2021</option>
+              <option>2 năm 2021</option>
+            </select>
+          </div>
+        </div>
+        <div class="uk-margin">
+          <label class="uk-form-label uk-text-default" for="form-horizontal-select">Lớp:</label>
+          <div class="uk-form-controls">
+            <select class="uk-select" id="form-horizontal-select">
+              <option>21DTHIB - CSLT</option>
+            </select>
+          </div>
+        </div>
+        <table class="table-default">
+            <thead>
+              <tr>
+                <th scope="col">Mã SV</th>
+                <th scope="col">Họ và tên</th>
+                <th scope="col">Giới tính</th>
+                <th scope="col">Ngày sinh</th>
+                <th scope="col">Lớp học</th>
+                <th scope="col">Điểm quá trình</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-label="Mã SV">2100005195</td>
+                <td data-label="Họ và tên">Trần Thanh Nhàn</td>
+                <td data-label="Giới tính">Nam</td>
+                <td data-label="Ngày sinh">11/13/2003</td>
+                <td data-label="Lớp học">21DTH1B</td>
+                <td data-label="Điểm quá trình">7.5</td>
+              </tr>
+              <tr>
+                <td data-label="Mã SV">2100006504</td>
+                <td data-label="Họ và tên">Phan Anh Bảo</td>
+                <td data-label="Giới tính">Nam</td>
+                <td data-label="Ngày sinh">8/5/2003</td>
+                <td data-label="Lớp học">21DTH1B</td>
+                <td data-label="Điểm quá trình">7.0</td>
+              </tr>
+              <tr>
+                <td data-label="Mã SV">2100007268</td>
+                <td data-label="Họ và tên">Hồ Trọng Bình</td>
+                <td data-label="Giới tính">Nam</td>
+                <td data-label="Ngày sinh">7/10/2003</td>
+                <td data-label="Lớp học">21DTH1B</td>
+                <td data-label="Điểm quá trình">8.0</td>
+              </tr><tr>
+                <td data-label="Mã SV">2100006474</td>
+                <td data-label="Họ và tên">Phan Thị Anh Đài</td>
+                <td data-label="Giới tính">Nam</td>
+                <td data-label="Ngày sinh">10/16/2003</td>
+                <td data-label="Lớp học">21DTH1B</td>
+                <td data-label="Điểm quá trình">6.5</td>
+              </tr><tr>
+                <td data-label="Mã SV">2100007383</td>
+                <td data-label="Họ và tên">Trần Thanh Danh</td>
+                <td data-label="Giới tính">Nam</td>
+                <td data-label="Ngày sinh">11/10/2003</td>
+                <td data-label="Lớp học">21DTH1B</td>
+                <td data-label="Điểm quá trình">7.5</td>
+              </tr><tr>
+                <td data-label="Mã SV">2100007344</td>
+                <td data-label="Họ và tên">Lê Văn Đen</td>
+                <td data-label="Giới tính">Nam</td>
+                <td data-label="Ngày sinh">9/2/2003</td>
+                <td data-label="Lớp học">21DTH1B</td>
+                <td data-label="Điểm quá trình">7.5</td>
+              </tr><tr>
+                <td data-label="Mã SV">2100006506</td>
+                <td data-label="Họ và tên">Nguyễn Đức Đô</td>
+                <td data-label="Giới tính">Nam</td>
+                <td data-label="Ngày sinh">3/22/2003</td>
+                <td data-label="Lớp học">21DTH1B</td>
+                <td data-label="Điểm quá trình">7.0</td>
+              </tr><tr>
+                <td data-label="Mã SV">2100007338</td>
+                <td data-label="Họ và tên">Nguyễn Duy Đoan</td>
+                <td data-label="Giới tính">Nam</td>
+                <td data-label="Ngày sinh">4/20/2003</td>
+                <td data-label="Lớp học">21DTH1B</td>
+                <td data-label="Điểm quá trình">9.0</td>
+              </tr><tr>
+                <td data-label="Mã SV">2100006508</td>
+                <td data-label="Họ và tên">Nguyễn Tiến Đông</td>
+                <td data-label="Giới tính">Nam</td>
+                <td data-label="Ngày sinh">6/21/2003</td>
+                <td data-label="Lớp học">21DTH1B</td>
+                <td data-label="Điểm quá trình">7.5</td>
+              </tr><tr>
+                <td data-label="Mã SV">2100007249</td>
+                <td data-label="Họ và tên">Đoàn Văn Đức</td>
+                <td data-label="Giới tính">Nam</td>
+                <td data-label="Ngày sinh">11/22/2003</td>
+                <td data-label="Lớp học">21DTH1B</td>
+                <td data-label="Điểm quá trình">7.0</td>
+              </tr>
+            </tbody>
+        </table>
+        </div>
+    </div>
+    <div id="offcanvas" uk-offcanvas>
+      <div class="uk-offcanvas-bar">
+          <button class="uk-offcanvas-close" type="button" uk-close></button>
+          <div class="uk-flex uk-flex-column uk-width-1-1 uk-position-center">
+              <a class="bor uk-button uk-button-danger uk-margin" href="./index.html">Quản lý hồ sơ</a>
+              <a class="bor uk-button uk-button-danger uk-margin" href="./qrcode.html">Quét mã QR</a>
+              <a class="bor uk-button uk-button-danger uk-margin" href="./bang-diem-qua-trinh.html">Điểm quá trình</a>
+              <a class="bor uk-button uk-button-danger uk-margin" href="./bang-diem-cuoi-ky.html">Điểm cuối kỳ</a>
+              <a class="bor uk-button uk-button-danger uk-margin" href="./quan-ly-nguoi-dung.html">Quản lý người dùng</a>
+          </div>
+      </div>
+  </div>
+    <div id="xac-nhan-trang-thai" class="uk-flex-top" uk-modal>
+        <div class="bor uk-modal-dialog uk-modal-body uk-margin-auto-vertical uk-text-center">
+            <form action="./index.html">
+            <p>Bạn có chắc muốn xóa hồ sơ này?</p>
+            <div class="uk-margin uk-child-width-1-2 uk-flex">
+                <div>
+                    <button class="bor uk-button uk-button-danger" type="submit">Có</button>
+                </div>
+                <div>
+                    <button class="bor uk-button uk-button-default uk-modal-close" type="button">Không</button>
+                </div>
+            </div>
+        </form>
+        </div>
+    </div>
+</body>
+
+</html>
